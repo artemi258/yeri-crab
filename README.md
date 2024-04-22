@@ -3,13 +3,13 @@
 # http://localhost:3001/api/applications POST
 
 -body:
-`{
+{
 'Название фирмы клиента': string;<br />
 'ФИО перевозчика': string;<br />
 'Контактный телефон перевозчика': string;<br />
 'Комментарии': string;<br />
 'ATI': string;<br />
-}`
+}
 
 -response:
 `number`
