@@ -2,80 +2,80 @@
 
 # http://localhost:3001/api/applications POST
 
--body:
-{
-'Название фирмы клиента': string;
-'ФИО перевозчика': string;
-'Контактный телефон перевозчика': string;
-'Комментарии': string;
-'ATI': string;
+-body:<br />
+{<br />
+'Название фирмы клиента': string;<br />
+'ФИО перевозчика': string;<br />
+'Контактный телефон перевозчика': string;<br />
+'Комментарии': string;<br />
+'ATI': string;<br />
 }
 
--response:
-number
+-response:<br />
+`number`
 
 # http://localhost:3001/api/applications GET
 
--response:
-{
-id: string;
-'Номер заявки': number;
-'Дата и время получения заявки от клиента': Date;
-'Название фирмы клиента': string;
-'ФИО перевозчика': string;
-'Контактный телефон перевозчика': string;
-'Комментарии': string;
-'Статус заявки': string;
-'ATI': string;
+-response:<br />
+{<br />
+id: string;<br />
+'Номер заявки': number;<br />
+'Дата и время получения заявки от клиента': Date;<br />
+'Название фирмы клиента': string;<br />
+'ФИО перевозчика': string;<br />
+'Контактный телефон перевозчика': string;<br />
+'Комментарии': string;<br />
+'Статус заявки': string;<br />
+'ATI': string;<br />
 }
 
 # http://localhost:3001/api/applications/status PATCH
 
--body:
-{
-id: string;
-status: string;
+-body:<br />
+{<br />
+id: string;<br />
+status: string;<br />
 }
 
--response:
-{
-id: string;
-status: string;
+-response:<br />
+{<br />
+id: string;<br />
+status: string;<br />
 }
 
 # http://localhost:3001/api/applications DELETE
 
-body:
-{
-id: string
+body:<br />
+{<br />
+id: string<br />
 }
 
--response:
-[
-{
-"id": string;
-"Номер заявки": number;
-"Дата и время получения заявки от клиента": string;
-"Статус заявки": string;
-"Название фирмы клиента": string;
-"ФИО перевозчика": string;
-"Контактный телефон перевозчика": string;
-"Комментарии": string;
-"ATI": string;
-}
+-response:<br />
+[<br />
+{<br />
+"id": string;<br />
+"Номер заявки": number;<br />
+"Дата и время получения заявки от клиента": string;<br />
+"Статус заявки": string;<br />
+"Название фирмы клиента": string;<br />
+"ФИО перевозчика": string;<br />
+"Контактный телефон перевозчика": string;<br />
+"Комментарии": string;<br />
+"ATI": string;<br />
+}<br />
 ]
 
 # http://localhost:3001/api/applications/value PATCH
 
-body:
-{
-id: string;
-key: string;
-value: string
+body:<br />
+{<br />
+id: string;<br />
+key: string;<br />
+value: string<br />
 }
 
-response:
-{
-key: string;
-value: string
+response:<br />
+{<br />
+key: string;<br />
+value: string<br />
 }

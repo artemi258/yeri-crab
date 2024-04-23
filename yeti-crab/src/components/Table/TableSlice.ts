@@ -24,19 +24,12 @@ const TableSlice = createSlice({
   },
  },
  extraReducers: (builder) => {
-  builder
-   .addCase(fetchingAllApplications.pending, (state) => {
-    // state.loading = true;
-   })
-   .addCase(
-    fetchingAllApplications.fulfilled,
-    (state, action: PayloadAction<IColumnsFromServer[]>) => {
-     state.applications = action.payload;
-    },
-   )
-   .addCase(fetchingAllApplications.rejected, (state, action) => {
-    // state.error = action.payload as string;
-   });
+  builder.addCase(
+   fetchingAllApplications.fulfilled,
+   (state, action: PayloadAction<IColumnsFromServer[]>) => {
+    state.applications = action.payload;
+   },
+  );
  },
 });
 
